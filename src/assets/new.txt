@@ -1,0 +1,33 @@
+Fri 23 Feb 16:38:06 IST 2018|**DEBUG**| org.springframework.jdbc.core.JdbcTemplate | Executing prepared SQL update | ThreadPoolTaskScheduler-1
+ Details{sdpGrid:,ClientName:  ClientInstanceName: ,ClientThreadName:  }| ThreadPoolTaskScheduler-1
+Fri 23 Feb 16:38:06 IST 2018|**DEBUG**| org.springframework.jdbc.core.JdbcTemplate | Executing prepared SQL statement [UPDATE SPRG_BATCH_JOB_EXECUTION set START_TIME = ?, END_TIME = ?,  STATUS = ?, EXIT_CODE = ?, EXIT_MESSAGE = ?, VERSION = ?, CREATE_TIME = ?, LAST_UPDATED = ? where JOB_EXECUTION_ID = ? and VERSION = ?] | ThreadPoolTaskScheduler-1
+ Details{sdpGrid:,ClientName:  ClientInstanceName: ,ClientThreadName:  }| ThreadPoolTaskScheduler-1
+Fri 23 Feb 16:38:06 IST 2018|**DEBUG**| org.springframework.jdbc.core.JdbcTemplate$2 | SQL update affected 1 rows | ThreadPoolTaskScheduler-1
+ Details{sdpGrid:,ClientName:  ClientInstanceName: ,ClientThreadName:  }| ThreadPoolTaskScheduler-1
+Fri 23 Feb 16:38:06 IST 2018|**DEBUG**| org.springframework.transaction.support.AbstractPlatformTransactionManager | Initiating transaction commit | ThreadPoolTaskScheduler-1
+ Details{sdpGrid:,ClientName:  ClientInstanceName: ,ClientThreadName:  }| ThreadPoolTaskScheduler-1
+Fri 23 Feb 16:38:06 IST 2018|**DEBUG**| org.springframework.jdbc.datasource.DataSourceTransactionManager | Committing JDBC transaction on Connection [jdbc:db2://192.168.6.95:50000/MCOM2017, UserName=db2inst1, IBM DB2 JDBC Universal Driver Architecture] | ThreadPoolTaskScheduler-1
+ Details{sdpGrid:,ClientName:  ClientInstanceName: ,ClientThreadName:  }| ThreadPoolTaskScheduler-1
+Fri 23 Feb 16:38:06 IST 2018|**DEBUG**| org.springframework.jdbc.datasource.DataSourceTransactionManager | Releasing JDBC Connection [jdbc:db2://192.168.6.95:50000/MCOM2017, UserName=db2inst1, IBM DB2 JDBC Universal Driver Architecture] after transaction | ThreadPoolTaskScheduler-1
+ Details{sdpGrid:,ClientName:  ClientInstanceName: ,ClientThreadName:  }| ThreadPoolTaskScheduler-1
+Fri 23 Feb 16:38:06 IST 2018|**DEBUG**| org.springframework.jdbc.datasource.DataSourceUtils | Returning JDBC Connection to DataSource | ThreadPoolTaskScheduler-1
+ Details{sdpGrid:,ClientName:  ClientInstanceName: ,ClientThreadName:  }| ThreadPoolTaskScheduler-1
+Fri 23 Feb 16:38:06 IST 2018|**DEBUG**| com.macys.platform.batch.core.jobintegration.JobStatsExecutionListener | Got from JobParameters jobId=101038 | ThreadPoolTaskScheduler-1
+ Details{sdpGrid:,ClientName:  ClientInstanceName: ,ClientThreadName:  }| ThreadPoolTaskScheduler-1
+Fri 23 Feb 16:38:06 IST 2018|**DEBUG**| com.macys.platform.batch.core.jobintegration.JobStatsExecutionListener | Job 101038 started. JobExecution: id=2110340, version=1, startTime=Fri Feb 23 16:38:06 IST 2018, endTime=null, lastUpdated=Fri Feb 23 16:38:06 IST 2018, status=STARTED, exitStatus=exitCode=UNKNOWN;exitDescription=, job=[JobInstance: id=2110700, version=0, JobParameters=[{job_id=101038, job_tracking_id=9be80acf-b498-4f1f-ae5a-8f2c4756bad9, job_web_app_url=http://localhost:8083}], Job=[mocReservationNoBulkUploadTriggerJob]] | ThreadPoolTaskScheduler-1
+ Details{sdpGrid:,ClientName:  ClientInstanceName: ,ClientThreadName:  }| ThreadPoolTaskScheduler-1
+Fri 23 Feb 16:38:06 IST 2018|**DEBUG**| com.macys.platform.util.job.status.componentmgr.JobStatusUtilComponentMgr | START ::startJob()::Input parameters : 
+
+ Tracking ID: 9be80acf-b498-4f1f-ae5a-8f2c4756bad9
+ Job ID: 101038
+ Job Name: 
+ Job Status: null
+ Start Time: 02 23,2018 16:38:06
+ End Time: 
+ Host Name: OSIT-L-0081
+ Instance Name: MOC Reservation Number bulk upload Job Instance
+ Notes: MOC Reservation Number bulk upload Job Instance
+ Total Records: 0
+ Records Processed: 0
+ Cluster Name: null | ThreadPoolTaskScheduler-1
+ Details{sdpGrid:,ClientName:  ClientInstanceName: ,ClientThreadName:  }| ThreadPoolTaskScheduler-1

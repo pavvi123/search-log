@@ -1,0 +1,165 @@
+<!-- <nav class="navbar navbar-expand-md fixed-top" style="background-color: #0064ff8a;color:black">
+  <a class="navbar-brand" href="#" style="color:white"><img src="assets/logo.png" style="width: 35px"/></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:white;padding-left: 1.8em">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+      
+    </ul>
+   
+  </div>
+</nav>
+
+<main role="main" class="container">
+ -->
+  <!-- <div class="starter-template">
+    <h1>Bootstrap starter template</h1>
+    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+  </div> -->
+  <!-- <div class="row">
+    <div class="col-sm-8">
+        <div class="form-group" style="display: ruby;position: relative;width: 70%">
+            
+          <label for="sel1"><h5>Select list:</h5></label>
+            <select class="form-control" id="sel1" #t    style="width: inherit">
+              <option>Error Log</option>
+              <option>Debug Log</option>
+              <option>Info log</option>
+            </select>
+          </div>
+    </div>
+    <div class="col-sm-4">
+      <button type="button" class="alert-info" style="height: 38px;width:100px;border-radius: 25px;" (click)="pushme(t.value)">Submit</button>
+    </div>
+  </div>
+<div class="row" style="margin-top: 20px">
+ <div class="col-md-8" style="align-content: center;display: inline-flex">
+    <h5>Time Range From:</h5> &nbsp;&nbsp;
+   <div class="input-group" style="width: 250px;" >
+       <input type="datetime" class="form-control"  [owlDateTime]="dt1"   placeholder="DD/MM/YY" style="width:150px">
+    <div class="input-group-addon">
+      <span class="trigger" [owlDateTimeTrigger]="dt1">
+          <i class="fa fa-calendar"></i>
+        <owl-date-time #dt1></owl-date-time>
+
+      </span>
+      <button (click)="getDate(dt1)">click</button>
+    </div>
+  </div>
+
+</div>
+<div class="col-md-4" style="align-content: center;display: inline-flex">
+    <h5>To:</h5> &nbsp;&nbsp;
+  <div class="input-group" style="width: 250px;">
+     <input  class="form-control"  [owlDateTime]="dt2"  placeholder="DD/MM/YY" style="width:150px">
+      <div class="input-group-addon">
+        <span class="trigger" [owlDateTimeTrigger]="dt2">
+            <i class="fa fa-calendar"></i>
+          <owl-date-time #dt2></owl-date-time>
+        </span>
+      </div>
+    </div></div>
+</div>
+
+
+  <div class="row" style="margin-top: 20px">
+    <h2 class="headertekst"><i class="fa fa-search"></i> Search for the string</h2>
+    <input class="form-control" [(ngModel)]="searchText" placeholder="Type the search...">
+    
+    <table class="table table-striped" style="margin-top: 10px;">
+      <tr>
+        <th class="table-danger" style="text-align: center;font-size: 25px" >Error Log</th>
+      </tr>
+      <tr *ngFor="let c of subString | filter : searchText">
+        <td>
+            {{c}}
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  
+</main>/.container -->
+
+<!--The content below is only a placeholder and can be replaced.-->
+<nav class="navbar navbar-expand-md fixed-top" style="background-color: #0064ff8a;color:black">
+    <a class="navbar-brand" href="#" style="color:white"><img src="assets/logo.png" style="width: 35px"/></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" style="color:white;padding-left: 1.8em">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+        
+      </ul>
+     
+    </div>
+  </nav>
+<div class="container">
+                <div style="text-align:center">
+                  
+                  <h1>
+                    {{ title }}Log Analyzer!! 
+                  </h1>
+                </div>
+                  <br/>
+                  <div class="row">
+                    <div class="form-group" style="float: inline-start;
+                    margin-left: 450px;"> 
+                  <select required style="margin-left: 30px;">
+                      <option value="" disabled selected>Please select your log</option>
+                      <option value="1">ERROR</option>
+                      <option value="2">DEBUG</option>
+                      <option value="3">INFO</option>
+                      <option value="4">WARN</option>
+                      <option value="5">FATAL</option>
+                    </select>
+                    <button class="btn btn-light" type="submit" style="margin-left: 15px">Submit</button>
+                <br/>
+                <br/>
+                <div style="text-align:center" class="topnav">
+                    <div class="search-container">
+                      <form action="/action_page.php">
+                        <input type="text" placeholder="Enter text here.." name="search">
+                        <button type="submit" class="btn btn-light" style="margin-left: 8px">Enter</button>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+                  <br/> 
+                  <br/>
+            </div>
+                
+            <div class="row" style="margin-top: 20px">
+                <h2 class="headertekst"><i class="fa fa-search"></i> Search for the string</h2>
+                <input class="form-control" [(ngModel)]="searchText" placeholder="Type the search...">
+                
+                <table class="table table-striped" style="margin-top: 10px;">
+                  <tr>
+                    <th class="table-danger" style="text-align: center;font-size: 25px" >Error Log</th>
+                  </tr>
+                  <tr *ngFor="let c of subString | filter : searchText">
+                    <td>
+                        {{c}}
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            
+  </div><!--/container-->
+
+
+
+
+
